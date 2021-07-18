@@ -2,9 +2,15 @@
 
 #pragma once
 
+//include camera file so i can change camera placement
+#include "Camera/CameraComponent.h"
+#include "Components/CapsuleComponent.h"
+
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "MyCharacter.generated.h"
+
+
 
 UCLASS()
 class PANCHAALIS_A1_API AMyCharacter : public ACharacter
@@ -42,5 +48,9 @@ public:
 	// clears jump flag when key is released
 	UFUNCTION()
 	void StopJump();
+
+	//camera 
+	UPROPERTY(VisibleAnywhere)
+	UCameraComponent* TPCameraComponent;
 
 };
