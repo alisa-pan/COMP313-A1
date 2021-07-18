@@ -33,7 +33,14 @@ public:
 
 	// handles input for moving right and left
 	UFUNCTION()
-		void MoveRight(float Value);
+	void MoveRight(float Value);
 
+	// sets jump flag (from ACharacter base class) to true when key is pressed
+	UFUNCTION()
+	void StartJump();
+
+	// clears jump flag when key is released
+	UFUNCTION()
+	void StopJump();
 
 };

@@ -38,14 +38,18 @@ void AMyCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
 	//tutorial code (link above)
+	
 	//Set up "movement" bindings.
 	PlayerInputComponent->BindAxis("MoveForward", this, &AMyCharacter::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &AMyCharacter::MoveRight);
 
-	//also tutorial code (link above)
 	//Set up "look" bindings
 	PlayerInputComponent->BindAxis("Turn", this, &AMyCharacter::AddControllerYawInput); //side-to-side
 	PlayerInputComponent->BindAxis("LookUp", this, &AMyCharacter::AddControllerPitchInput); //up-and-down
+
+	//Set up "action" bindings 
+	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &AMyCharacter::StartJump);
+	PlayerInputComponent->BindAction("Jump", IE_Released, this, &AMyCharacter::StopJump);
 }
 
 //tutorial code (link above)
@@ -63,5 +67,12 @@ void AMyCharacter::MoveRight(float Value)
 	AddMovementInput(Direction, Value);
 }
 
+void AMyCharacter::StartJump() {
+	bPressedJump = true;
+}
+
+void AMyCharacter::StopJump() {
+	bPressedJump = false;
+}
 
 
