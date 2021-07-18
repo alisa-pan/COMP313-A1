@@ -14,4 +14,7 @@ class PANCHAALIS_A1_API Apanchaalis_A1GameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
 
+	//function declaration to override StartPlay 
+	virtual void StartPlay() override;
+
 };
