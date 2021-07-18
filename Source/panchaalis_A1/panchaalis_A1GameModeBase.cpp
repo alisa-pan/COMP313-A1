@@ -4,7 +4,7 @@
 #include "panchaalis_A1GameModeBase.h"
 
 //code from https://docs.unrealengine.com/4.26/en-US/ProgrammingAndScripting/ProgrammingWithCPP/CPPTutorials/FirstPersonShooter/1/
-//when the game begins, the TEXT below will be displayed onscreen for 5 seconds in yellow
+//when the game begins, the TEXT below will be displayed onscreen for 5 seconds in yellow to check that this game mode is being used 
 void Apanchaalis_A1GameModeBase::StartPlay() {
 	Super::StartPlay();
 
