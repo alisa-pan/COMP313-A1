@@ -37,13 +37,18 @@ void AMyCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
-	//tutorial code 
+	//tutorial code (link above)
 	//Set up "movement" bindings.
 	PlayerInputComponent->BindAxis("MoveForward", this, &AMyCharacter::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &AMyCharacter::MoveRight);
+
+	//also tutorial code (link above)
+	//Set up "look" bindings
+	PlayerInputComponent->BindAxis("Turn", this, &AMyCharacter::AddControllerYawInput); //side-to-side
+	PlayerInputComponent->BindAxis("LookUp", this, &AMyCharacter::AddControllerPitchInput); //up-and-down
 }
 
-//tutorial code
+//tutorial code (link above)
 void AMyCharacter::MoveForward(float Value)
 {
 	// Find out which way is "forward" and record that the player wants to move that way
