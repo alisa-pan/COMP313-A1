@@ -53,4 +53,11 @@ public:
 	UPROPERTY(VisibleAnywhere)
 	UCameraComponent* TPCameraComponent;
 
+	//end tutorial code
+	
+	// eat apple
+	UFUNCTION()
+	void Eat();
+
+
 };

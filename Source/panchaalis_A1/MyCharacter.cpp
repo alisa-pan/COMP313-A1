@@ -2,6 +2,7 @@
 
 
 #include "MyCharacter.h"
+#include "AppleActor.h"
 
 // Sets default values
 AMyCharacter::AMyCharacter()
@@ -19,7 +20,7 @@ AMyCharacter::AMyCharacter()
 	TPCameraComponent->SetupAttachment(CastChecked<USceneComponent, UCapsuleComponent>(GetCapsuleComponent()));
 
 	//position camera slightly above character's eyes
-	TPCameraComponent->SetRelativeLocation(FVector(0.0f, 0.0f, 5.0f + BaseEyeHeight));
+	TPCameraComponent->SetRelativeLocation(FVector(-75.0f, 0.0f, 25.0f));
 
 	//enable pawn to control camera rotation
 	TPCameraComponent->bUsePawnControlRotation = true;
@@ -88,5 +89,9 @@ void AMyCharacter::StartJump() {
 void AMyCharacter::StopJump() {
 	bPressedJump = false;
 }
+//end tutorial code
 
+void AMyCharacter::Eat() {
+//	AAppleActor* eatenApple
+}
 
