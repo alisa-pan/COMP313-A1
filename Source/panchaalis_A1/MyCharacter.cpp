@@ -92,6 +92,6 @@ void AMyCharacter::StopJump() {
 //end tutorial code
 
 void AMyCharacter::Eat() {
-//	AAppleActor* eatenApple
+//	somehow get the AppleActor that has collided with MyCharacter and then call GetEaten on that AppleActor?
 }
 

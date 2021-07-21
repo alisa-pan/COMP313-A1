@@ -16,7 +16,7 @@ public:
 	AAppleActor();
 
 	UFUNCTION(BlueprintImplementableEvent, Category = "Eat")
-		void onGetEaten();
+	void onGetEaten();
 
 protected:
 	// Called when the game starts or when spawned
