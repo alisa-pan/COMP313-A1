@@ -72,3 +72,7 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+# Marketplace assets 
+Content/AnimalVarietyPack/*
+Content/Food_Pack_01/*
