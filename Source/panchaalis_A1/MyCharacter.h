@@ -21,6 +21,9 @@ public:
 	// Sets default values for this character's properties
 	AMyCharacter();
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float ApplesEaten;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

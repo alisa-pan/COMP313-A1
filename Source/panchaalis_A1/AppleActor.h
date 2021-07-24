@@ -18,6 +18,11 @@ public:
 	UFUNCTION(BlueprintImplementableEvent, Category = "Eat")
 	void onGetEaten();
 
+
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	int crowHits;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -28,5 +33,6 @@ public:
 
 	// when the crow eats an apple
 	void GetEaten();
+
 
 };
