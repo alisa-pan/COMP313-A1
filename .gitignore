@@ -74,5 +74,16 @@ Plugins/*/Intermediate/*
 DerivedDataCache/*
 
 # Marketplace assets 
-Content/AnimalVarietyPack/*
+Content/AnimalVarietyPack/Crow/Animations/*
+Content/AnimalVarietyPack/DeerStagAndDoe/Animations/*
 Content/Food_Pack_01/*
+
+# Exceptions -- don't ignore these files in the directories above
+!Content/AnimalVarietyPack/Crow/Animations/BP_CrowAnim.uasset
+!Content/AnimalVarietyPack/Crow/Animations/ANIM_Crow_Fly.uasset
+!Content/AnimalVarietyPack/Crow/Animations/ANIM_Crow_IdleLookAround.uasset
+!Content/AnimalVarietyPack/Crow/Animations/ANIM_Crow_Walk.uasset
+
+!Content/AnimalVarietyPack/DeerStagAndDoe/Animations/BP_DoeAnim.uasset
+!Content/AnimalVarietyPack/DeerStagAndDoe/Animations/ANIM_DeerDoe_IdleChew.uasset
+!Content/AnimalVarietyPack/DeerStagAndDoe/Animations/ANIM_DeerDoe_Run.uasset
