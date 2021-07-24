@@ -76,6 +76,9 @@ DerivedDataCache/*
 # Marketplace assets 
 Content/AnimalVarietyPack/Crow/Animations/*
 Content/AnimalVarietyPack/DeerStagAndDoe/Animations/*
+Content/AnimalVarietyPack/DeerStagAndDoe/Materials/M_DeerStag*
+Content/AnimalVarietyPack/DeerStagAndDoe/Meshes/SK_DeerStag*
+Content/AnimalVarietyPack/DeerStagAndDoe/Textures/T_Stag*
 Content/Food_Pack_01/*
 
 # Exceptions -- don't ignore these files in the directories above
