@@ -24,6 +24,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float ApplesEaten;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	bool win = false;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
