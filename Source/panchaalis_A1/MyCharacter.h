@@ -21,9 +21,11 @@ public:
 	// Sets default values for this character's properties
 	AMyCharacter();
 
+	// number of apples eaten by crow, is displayed on HUD. Value taken from collective crowHits in blueprint.
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float ApplesEaten;
 
+	// whether the crow wins 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	bool win = false;
 
@@ -60,10 +62,7 @@ public:
 	UCameraComponent* TPCameraComponent;
 
 	//end tutorial code
-	
-	// eat apple
-	UFUNCTION()
-	void Eat();
+
 
 
 };

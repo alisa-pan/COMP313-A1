@@ -24,9 +24,3 @@ void AAppleActor::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 }
-
-// when crow eats apple
-void AAppleActor::GetEaten() {
-	// update score on screen
-	onGetEaten();
-}

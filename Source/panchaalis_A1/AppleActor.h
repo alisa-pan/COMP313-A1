@@ -15,11 +15,8 @@ public:
 	// Sets default values for this actor's properties
 	AAppleActor();
 
-	UFUNCTION(BlueprintImplementableEvent, Category = "Eat")
-	void onGetEaten();
-
-
-
+	// calculated in blueprint: increases by 1 every time AppleActor collides with MyCharacter (the blueprint versions of those classes). 
+	// an apple is destroyed when is reaches 2 crowHits. 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	int crowHits;
 
