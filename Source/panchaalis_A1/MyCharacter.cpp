@@ -19,7 +19,7 @@ AMyCharacter::AMyCharacter()
 	//attach camera component to the character's capsule component (the little capsule-shaped cage around them)
 	TPCameraComponent->SetupAttachment(CastChecked<USceneComponent, UCapsuleComponent>(GetCapsuleComponent()));
 
-	//position camera slightly above character's eyes
+	//position camera
 	TPCameraComponent->SetRelativeLocation(FVector(-75.0f, 0.0f, 25.0f));
 
 	//enable pawn to control camera rotation
