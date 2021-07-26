@@ -21,6 +21,8 @@ public:
 	// Sets default values for this character's properties
 	AMyCharacter();
 
+
+	// Variables that are exposed to blueprint and edited there
 	// number of apples eaten by crow, is displayed on HUD. Value taken from collective crowHits in blueprint.
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float ApplesEaten;

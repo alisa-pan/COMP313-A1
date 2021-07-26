@@ -54,6 +54,7 @@ void AMyCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 
 	//tutorial code (link above)
 	
+	// Call the function in the third param of BindAxis when the mapping with the name in the first param is triggered (by player input as defined in gamemode)
 	//Set up "movement" bindings.
 	PlayerInputComponent->BindAxis("MoveForward", this, &AMyCharacter::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &AMyCharacter::MoveRight);
