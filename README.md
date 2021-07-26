@@ -3,6 +3,11 @@
 ## Assignment 1: "Crow Game"
 ## Alisa Panchavinin
 
+## Link to video
+I have to warn you about my video. Basically, I tried so many times to screen record playing my game and do a voiceover, but the recording would always just lag way too much to really be able to see what was going on in the game. In the end I had to use my phone to film my laptop screen and then put subtitles over the video. So that's the gameplay part of the video. It doesn't look great but hopefully you can get the feel of my game from it. I was able to screen record myself talking about the blueprints for the rest of the video without too much lag, but the audio is a little echoey. Honestly I'm so sorry for the state of my video, but it was pretty much the best I could do with what I had. Anyway, you can download it [here](https://drive.google.com/file/d/1SGClkIDTOX51oAI-G7FieWnMZT0zQstU/view?usp=sharing). It's actually 11 minutes (sorry about that too) but it should be fine to play at a higher speed, I don't talk very fast. 
+
+Also I couldn't include showing the C++ to blueprint nodes in the video because it was already over time, but they are the UPROPERTY fields in the AppleActor and MyCharacter classes, and you can find them in the header files for those classes. 
+
 ## Game description
 ### Main action 
 The main action in the game is the movement of the crow around the playing space and its interactions with the apples. 
@@ -26,6 +31,6 @@ The part I found most interesting to do were the animations. I really liked maki
 The part of the game that I think is most interesting during playing is probably the NPCs. 
 
 ## Other notes:
-- Here is the tutorial I used to really get started. I began with a blank template, which I found incredibly intimidating, but I think I learned a lot by doing it that way. 
+- [Here](https://docs.unrealengine.com/4.26/en-US/ProgrammingAndScripting/ProgrammingWithCPP/CPPTutorials/FirstPersonShooter/) is the tutorial I used to really get started, especially with making my third-person character from scratch. I began with a blank template, which I found incredibly intimidating, but I think I learned a lot by doing it that way. 
 
 - Some of my commits don't match up with the files I talk about in the commit message. I was still learning how to use git and I got a bit confused along the way, but all the commits after 0ba8a4f should be fine. Most of the ones before it are fine, too, there are just a few in the middle. 
